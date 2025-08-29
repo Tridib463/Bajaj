@@ -10,12 +10,12 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
-// Replace these with your actual details
+
 const USER_DETAILS = {
     full_name: "Tridib_Chatterjee", 
-    dob: "16032003", // Replace with your DOB in ddmmyyyy format
-    email: "tridibstudy@gmail.com", // Replace with your email
-    roll_number: "22BCE5142" // Replace with your college roll number
+    dob: "16032003", 
+    email: "tridibstudy@gmail.com", 
+    roll_number: "22BCE5142" 
 };
 
 // Helper function to check if a string represents a number
