@@ -176,7 +176,10 @@ app.use((err, req, res, next) => {
 });
 
 // Start server
-module.exports.handler = serverless(app);
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+    console.log(`Test the API at: http://localhost:${PORT}/bfhl`);
+});
 
 // Export for testing purposes
 module.exports = app;
